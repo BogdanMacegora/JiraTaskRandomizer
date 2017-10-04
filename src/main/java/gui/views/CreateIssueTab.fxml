@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="createIssueTab" focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.CreateIssuesController">
+	<children>
+		<TextField fx:id="textFieldParentIssue" disable="true" layoutX="151.0" layoutY="83.0" prefHeight="25.0" prefWidth="96.0" visible="false" />
+		<Label layoutX="92.0" layoutY="23.0" text="Project:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="105.0" layoutY="56.0" text="Type:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="74.0" layoutY="127.0" text="Summary:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="62.0" layoutY="167.0" prefHeight="20.0" prefWidth="85.0" text="Description:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="18.0" layoutY="204.0" text="Application Name:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="8.0" layoutY="241.0" text="Application Version:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<Label layoutX="10.0" layoutY="277.0" text="Application Vendor:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<ChoiceBox fx:id="choiceBoxType" layoutX="151.0" layoutY="53.0" prefHeight="25.0" prefWidth="169.0" />
+		<TextField fx:id="textFieldSummary" layoutX="150.0" layoutY="124.0" prefHeight="25.0" prefWidth="469.0" />
+		<TextField fx:id="textFieldDescription" layoutX="151.0" layoutY="164.0" prefHeight="25.0" prefWidth="466.0" />
+		<Label layoutX="58.0" layoutY="85.0" text="Parent issue:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<TextField fx:id="textFieldAppName" layoutX="151.0" layoutY="202.0" prefHeight="25.0" prefWidth="335.0" />
+		<TextField fx:id="textFieldAppVersion" layoutX="151.0" layoutY="238.0" prefHeight="25.0" prefWidth="335.0" />
+		<TextField fx:id="textFieldAppVendor" layoutX="151.0" layoutY="275.0" prefHeight="25.0" prefWidth="335.0" />
+		<Label layoutX="79.0" layoutY="313.0" text="Due date:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<DatePicker fx:id="datePickerDD" layoutX="151.0" layoutY="311.0" prefHeight="25.0" prefWidth="109.0" />
+		<ChoiceBox fx:id="choiceBoxProject" layoutX="152.0" layoutY="20.0" prefHeight="25.0" prefWidth="169.0" />
+		<Label layoutX="22.0" layoutY="351.0" text="Number of copies:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+		<TextField fx:id="textFieldNumberOfCopies" layoutX="151.0" layoutY="348.0" prefHeight="25.0" prefWidth="109.0" text="1" />
+		<Button fx:id="createIssueButton" layoutX="654.0" layoutY="495.0" mnemonicParsing="false" onAction="#createIssues" prefHeight="32.0" prefWidth="111.0" text="Create" />
+		<Accordion layoutX="333.0" layoutY="334.0" />
+		<TextArea fx:id="textAreaResult" editable="false" focusTraversable="false" layoutX="150.0" layoutY="386.0" opacity="0.7" prefHeight="105.0" prefWidth="341.0" wrapText="true" />
+		<Label layoutX="99.0" layoutY="386.0" text="Result:">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

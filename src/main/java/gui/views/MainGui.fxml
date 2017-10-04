@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.MainGuiController">
+	<children>
+		<TabPane prefHeight="577.0" prefWidth="794.0" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="Search issues">
+					<content>        
+						<fx:include fx:id="searchIssueTab" source="SearchIssueTab.fxml" />
+					</content>
+				</Tab>
+				<Tab text="Create issues">
+					<content>
+						<fx:include fx:id="createIssueTab" source="CreateIssueTab.fxml" />
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</Pane>
